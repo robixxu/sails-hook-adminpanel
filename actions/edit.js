@@ -51,10 +51,10 @@ module.exports = function(req, res) {
                     instance.model.update(params, reqData).exec(function(err, newRecord) {
                         if (err) {
                             req._sails.log.error(err);
-                            req.flash('adminError', err.details || 'Something went wrong...');
+                            //req.flash('adminError', err.details || 'Something went wrong...');
                             return done(err);
                         }
-                        req.flash('adminSuccess', 'Your record was updated !');
+                        //req.flash('adminSuccess', 'Your record was updated !');
                         reloadNeeded = true;
                         return done();
                     });

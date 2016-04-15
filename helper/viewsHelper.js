@@ -37,7 +37,8 @@ module.exports = {
      * @param {string} type Types: adminError|adminSuccess
      */
     hasFlash: function (req, type) {
-        return (req.session.flash && req.session.flash[type]);
+        console.log(type);
+        return  '';
     },
 
     /**
